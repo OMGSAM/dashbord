@@ -73,7 +73,7 @@
 													<th scope="col">Age</th>
 													<th scope="col">Civil Status</th>
                                                     <th scope="col">Gender</th>
-													<th scope="col">Mission</th>
+													<!-- <th scope="col">Mission</th> -->
 													<th scope="col">Action</th>
 												</tr>
 											</thead>
@@ -91,7 +91,7 @@
                                                             <td><?= $row['age'] ?></td>
                                                             <td><?= $row['civilstatus'] ?></td>
                                                             <td><?= $row['gender'] ?></td>
-                                                            <td><?= $row['purok'] ?></td>
+                                                            
                                                             <td>
 																<a href="resident_update_form.php?id=<?= $row['id'] ?>" class="btn btn-link" data-toggle="tooltip" data-placement="top" title="Update">
 																	<i class="fa fa-edit mr-2"></i>
@@ -127,8 +127,8 @@
         function Export(){
 			// should have policy like 2 weeks retention of records and scope for export to csv
 			var conf = confirm("Export resident to CSV?");
-			var stmt = "SELECT lastname,firstname,middlename,birthdate,age,civilstatus, gender, purok,voterstatus FROM tblresident";
-			var tblHeader = 'Last name,First name,Middle name,Birthdate,Age, Civil Status,Gender,Purok,Voter Status';
+			var stmt = "SELECT lastname,firstname,middlename,birthdate,age,civilstatus, gender,voterstatus FROM tblresident";
+			var tblHeader = 'Last name,First name,Middle name,Birthdate,Age, Civil Status,Gender,Voter Status';
 			var fileName = "resident";
 			if(conf){
 				window.open(`export.php?query=${stmt}&tblHeader=${tblHeader}&fileName=${fileName}`, '_blank');

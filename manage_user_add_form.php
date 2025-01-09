@@ -3,7 +3,7 @@
 <html lang="en">
 <head>
 	<?php include 'templates/header.php' ?>
-	<title>Manage User - Masili Health Service System</title>
+	<title>Manage User -  Health Service System</title>
 </head>
 <body>
 	<div class="wrapper">

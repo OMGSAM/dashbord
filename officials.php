@@ -22,7 +22,7 @@ FROM tbl_officials o LEFT JOIN tbl_chairmanship c
 <html lang="en">
 <head>
 	<?php include 'templates/header.php' ?>
-	<title>Officials - Masili Health Service System</title>
+	<title>Officials - Health Service System</title>
 </head>
 <body>
 	<div class="wrapper">

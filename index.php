@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>BMIS</title>
+    <title>KATIM -HEALTH CARE</title>
     <script language="javascript">
         window.location.href = "login.php"
     </script>

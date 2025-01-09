@@ -18,15 +18,26 @@
             <span class="navbar-toggler-icon">
                 <i class="icon-menu" ></i>
             </span>
-        </button>
+        </button>   
     </div>
     <!-- End Logo Header -->
 
     <!-- Navbar Header -->
-    <nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2"></nav>
+    <nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue2">
+        <li class="nav-item" style="position: absolute; top: 10px; right: 20px; display: inline-block;">
+            <a href="model/logout.php" style="text-align: center; display: inline-block;">
+                <i class="bx bx-log-out-circle" style="color: #d3fc03; font-size: 52px;"></i>
+                
+            </a>
+        </li>
+    </nav>
     <!-- End Navbar -->
+   
 </div>
 <style>
+    nav .nav-item{
+        right:0;
+    }
     .navbar-header[data-background-color="blue2"]{
         background: lightseagreen !important;
     }

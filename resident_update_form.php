@@ -24,7 +24,7 @@
 <html lang="en">
 <head>
 	<?php include 'templates/header.php' ?>
-	<title>Residents - Masili Health Service System</title>
+	<title>Residents - Health Service System</title>
 </head>
 <body>
 	<div class="wrapper">

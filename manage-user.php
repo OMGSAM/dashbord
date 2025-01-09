@@ -1,7 +1,7 @@
 <?php include 'server/server.php' ?>
 <?php 
 	$user = $_SESSION['username'];
-	$query = "SELECT * FROM tbl_users WHERE (username !='$user' AND username !='resident') ORDER BY `created_at` DESC";
+	$query = "SELECT * FROM tbl_users  ORDER BY `created_at` DESC";
     $result = $conn->query($query);
 
     $users = array();
@@ -12,8 +12,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
 	<?php include 'templates/header.php' ?>
-	<title>Manage User - Masili Health Service System</title>
+	<title>Manage User - Health Service System</title>
 </head>
 <body>
 	<div class="wrapper">
@@ -57,9 +59,10 @@
 										<table class="table">
 											<thead>
 												<tr class="text-primary">
-													<th scope="col">Account Name</th>
-													<th scope="col">Username</th>
-													<th scope="col">User Type</th>
+													<th scope="col">ID</th>
+													<th scope="col">USERNAME</th>
+													<th scope="col">MISSION</th>
+													<th scope="col">PASSWORD</th>
 													<th scope="col">Set Action</th>
 												</tr>
 											</thead>
@@ -68,17 +71,18 @@
 													<tr>
 														<td>
 															<div class="avatar avatar-sm">
-																<span class="avatar-title rounded-circle border border-white" style="background-color: lightseagreen"><?= ucwords($row['display_name'][0]) ?></span>
+																<!-- <span class="avatar-title rounded-circle border border-white" style="background-color: lightseagreen"><?= ucwords($row['display_name'][0]) ?></span> -->
 															</div>
-															<?= $row['display_name'] ?>
+															<?= $row['id'] ?>
 														</td>
 														<td><?= $row['username'] ?></td>
 														<td><?= $row['user_type'] ?></td>
+														<td><?= $row['password'] ?></td>
 														<td>
 															<div class="input-group mr-1" style="width:60%">
 																<select class="form-control" id="formGroupDefaultSelect">
-																	<option value="1" <?=$row['status'] == 1 ? 'selected="selected"' : '';?>">ACTIVE</option>
-																	<option value="0" <?=$row['status'] == 0 ? 'selected="selected"' : '';?>">INACTIVE</option>
+																	<option value="1" <?=$row['status'] == 1 ? 'selected="selected"' : '';?>>ACTIVE</option>
+																	<option value="0" <?=$row['status'] == 0 ? 'selected="selected"' : '';?>>INACTIVE</option>
 																</select>
 																<div class="input-group-append">
 																	<a href="manage_user_update_status.php?id=<?= $row['id'] ?>&status=<?= $row['status']==1?0:1 ?>" onclick="return confirm('Do you want to changes?');" class="btn btn-primary" data-toggle="tooltip" data-placement="top" title="Update user status">

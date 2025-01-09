@@ -435,7 +435,7 @@ margin: 5px; /* Espacement entre les éléments */
                        
                     </ul>
                 </div>
-                <a href="#" class="report">
+                <a href="model/logout.php" class="report">
                     <i class='bx bx-cloud-download'></i>
                     <span>LOG OUT</span>
                 </a>
@@ -443,12 +443,21 @@ margin: 5px; /* Espacement entre les éléments */
 
 
             <!-- Insights -->
+             <?php 
+             
+             $stmtMedinceAvailableTotal 	= "SELECT count(*) as ok FROM tbl_appointment";
+    $resMedicineAvailableTotal 	= $conn->query($stmtMedinceAvailableTotal);
+	$a = $resMedicineAvailableTotal->fetch_assoc();
+    
+
+?>
             <ul class="insights">
                 <li>
                    <i class="fa-solid fa-bed" id="w"></i>
                     <span class="info">
                         <h3>
-                            231
+                         333
+                            
                         </h3>
                         <p>Patients </p>
                     </span>
@@ -501,7 +510,8 @@ margin: 5px; /* Espacement entre les éléments */
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="images/profile-1.jpg">
+                                <img src="assets/img/z.jpg">
+
                                     <p>JAMAL</p>
                                 </td>
                                 <td>14-08-2023</td>
@@ -509,7 +519,8 @@ margin: 5px; /* Espacement entre les éléments */
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="images/profile-1.jpg">
+                                <img src="assets/img/z.jpg">
+
                                     <p>AYMAN</p>
                                 </td>
                                 <td>14-08-2023</td>
@@ -517,7 +528,7 @@ margin: 5px; /* Espacement entre les éléments */
                             </tr>
                             <tr>
                                 <td>
-                                    <img src="images/profile-1.jpg">
+                                    <img src="assets/img/z.jpg">
                                     <p>HANANE</p>
                                 </td>
                                 <td>14-08-2023</td>

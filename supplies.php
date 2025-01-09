@@ -13,8 +13,18 @@
 <html lang="en">
 <head>
 	<?php include 'templates/header.php' ?>
-	<title>Medical Supplies - Masili Health Service System</title>
+	<title>Medical Supplies - Health Service System</title>
 </head>
+<style>
+	#sss{
+		 
+		 font-size: 32px;
+		 font-weight: 600;
+		 margin-bottom: 10px;
+		 color:  #1c9790;
+	  font-family: 'Poppins', sans-serif;
+	}
+</style>
 <body>
 	<div class="wrapper">
 		<?php include 'templates/main-header.php' ?>
@@ -38,7 +48,7 @@
 								<div class="card-header">
 									<div class="card-head-row">
 										<div class="card-title text-primary">
-											<h1>MEDICAL SUPPLIES</h1>
+											<h1 id="sss" >MEDICAL SUPPLIES</h1>
 										</div>
 										<?php if(isset($_SESSION['username']) && $_SESSION['role']!='resident'): ?>
 										<div class="card-tools">

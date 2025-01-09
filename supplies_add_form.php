@@ -13,7 +13,7 @@
 <html lang="en">
 <head>
 	<?php include 'templates/header.php' ?>
-	<title>Medical Supplies - Masili Health Service System</title>
+	<title>Medical Supplies - Health Service System</title>
 </head>
 <body>
 	<div class="wrapper">

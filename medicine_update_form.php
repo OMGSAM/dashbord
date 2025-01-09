@@ -32,7 +32,7 @@
 <html lang="en">
 <head>
 	<?php include 'templates/header.php' ?>
-	<title>Medicine - Masili Health Service System</title>
+	<title>Medicine -  Health Service System</title>
 </head>
 <body>
 	<div class="wrapper">
