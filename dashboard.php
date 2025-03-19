@@ -512,26 +512,26 @@ margin: 5px; /* Espacement entre les éléments */
                                 <td>
                                 <img src="assets/img/z.jpg">
 
-                                    <p>JAMAL</p>
+                                    <p>IMRANE</p>
                                 </td>
-                                <td>14-08-2023</td>
+                                <td>20-02-2025</td>
                                 <td><span class="status completed">Completed</span></td>
                             </tr>
                             <tr>
                                 <td>
                                 <img src="assets/img/z.jpg">
 
-                                    <p>AYMAN</p>
+                                    <p>MARWANE</p>
                                 </td>
-                                <td>14-08-2023</td>
+                                <td>20-03-2025</td>
                                 <td><span class="status pending">Pending</span></td>
                             </tr>
                             <tr>
                                 <td>
                                     <img src="assets/img/z.jpg">
-                                    <p>HANANE</p>
+                                    <p>MORAD</p>
                                 </td>
-                                <td>14-08-2023</td>
+                                <td>20-03-2025</td>
                                 <td><span class="status process">Processing</span></td>
                             </tr>
                         </tbody>
