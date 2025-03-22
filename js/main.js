@@ -1,24 +1,3 @@
- 
-    // Récupérer le bouton par son ID
-    const bouton = document.getElementById("rrr");
-
-    // Ajouter un événement de clic sur le bouton
-    bouton.addEventListener("click", function() {
-        alert("L'alerte s'affiche !");
-    });
- 
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 (function($){"use strict";var menuBreakPoint=991;var sliderBreakPoint=991;var animeBreakPoint=1199;var headerTransition=300;var isTouchDevice=(('ontouchstart'in window)||(navigator.maxTouchPoints>0)||(navigator.msMaxTouchPoints>0));if(isTouchDevice){$('body').addClass('is-touchable');}

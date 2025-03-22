@@ -1,53 +1,22 @@
-<?php 
-#session_start();
-
-$host = "localhost"; // Remplacez par votre hôte
-$username = "root"; // Remplacez par votre utilisateur
-$password = ""; // Remplacez par votre mot de passe
-$dbname = "bis"; // Remplacez par votre base de données
-$conn = new mysqli($host, $username, $password, $dbname);
-
-//  if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-//     // Récupérer les données du formulaire
-//     $name = $conn->real_escape_string($_POST['name']);
-//     $email = $conn->real_escape_string($_POST['email']);
-//     $date = $conn->real_escape_string($_POST['date']);
-//     $age= $conn->real_escape_string($_POST['age']);
-//     $numero = $conn->real_escape_string($_POST['numero']);
-//     $doctor = $conn->real_escape_string($_POST['select']);
-//     $comment = $conn->real_escape_string($_POST['comment']);
-
-//     // Vérification et validation des champs obligatoires
-//     if ($name!=="" && $email!="" && $age!="") {
-
-//     $sql = "INSERT INTO tbl_appointment (resident_name, age, request_date,appointment_date, appointment_type, concern, status, staff_in_charge,mobile_no,remarks)
-//                 VALUES ('$name','$age','$date','$date','$comment','$comment','active', '$doctor', '$numero','$comment')";
-// 	 echo "<script>alert('data wi')</script>"; 
-//      $result = $conn->query($sql);
-//  	 }
- 
-// }
-?>
-
 <!doctype html>
 <html class="no-js" lang="en">
 <head>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.1/dist/sweetalert2.all.min.js"></script> 
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	 
+    <title>Inaamajay </title>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible"/>
+    <meta content="Inaamajay" name="author">
+    <meta content="width=device-width,initial-scale=1.0" name="viewport"/>
+    <meta content="Elevate your online presence with Inaamajay - a modern, versatile, multipurpose Bootstrap 5 responsive HTML5, SCSS template using highly creative 48+ ready demos."
+          name="description">
 
-     <title>Katim-Health Care </title>
     <link href="images/favicon.png" rel="shortcut icon">
     <link href="images/apple-touch-icon-57x57.png" rel="apple-touch-icon">
     <link href="images/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
     <link href="images/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+
     <link crossorigin href="https://fonts.googleapis.com" rel="preconnect">
     <link crossorigin href="https://fonts.gstatic.com" rel="preconnect">
+
     <link href="css/vendors.min.css" rel="stylesheet"/>
     <link href="css/icon.min.css" rel="stylesheet"/>
     <link href="css/style.min.css" rel="stylesheet"/>
@@ -55,41 +24,6 @@ $conn = new mysqli($host, $username, $password, $dbname);
     <link href="demos/medical/medical.css" rel="stylesheet"/>
 </head>
 <body data-mobile-nav-style="classic">
-
- <?php
-//$conn = new mysqli("localhost", "root", "", "bis");
- if ($conn) {
-//  echo"
-//         <script>
-//             Swal.fire({
-//                 icon: 'success',
-//                 title: 'DATABASE CONNECTED',
-//                 text: 'Coordonnnees  valides!',
-//                 confiramtaionButtonText: 'Ok',
-//                 timer : 3500
-//             })
-//         </script>
-//         ";
-// }
- }
-?>
-
- 
-
-
-
-
-
-
-
-
-
- 
-
-
-
-
-
 <div class="box-layout">
 
     <header>
@@ -97,7 +31,7 @@ $conn = new mysqli($host, $username, $password, $dbname);
         <nav class="navbar navbar-expand-lg header-light bg-white disable-fixed">
             <div class="container-fluid">
                 <div class="col-auto col-lg-2 me-lg-0 me-auto">
-                    <a class="navbar-brand" href="index.php">
+                    <a class="navbar-brand" href="index.html">
                         <img alt class="default-logo"
                              data-at2x="images/demo-medical-logo-black@2x.png" src="images/demo-medical-logo-black.png">
                         <img alt class="alt-logo"
@@ -116,7 +50,7 @@ $conn = new mysqli($host, $username, $password, $dbname);
                     </button>
                     <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
                         <ul class="navbar-nav">
-                            <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="demo-medical-about.html">About</a></li>
                             <li class="nav-item"><a class="nav-link" href="demo-medical-treatments.html">Treatments</a>
                             </li>
@@ -131,7 +65,7 @@ $conn = new mysqli($host, $username, $password, $dbname);
                     <div class="header-icon">
                         <div class="header-button">
                             <a class="btn btn-small btn-switch-text btn-base-color left-icon btn-round-edge btn-box-shadow"
-                               href="demo-medical-appointment.php">
+                               href="demo-medical-appointment.html">
 <span>
 <span><i class="feather icon-feather-calendar"></i></span>
 <span class="btn-double-text" data-text="Book online">Book online</span>
@@ -156,13 +90,13 @@ $conn = new mysqli($host, $username, $password, $dbname);
                     <h1 class="text-dark-gray fw-800 xs-fs-65 ls-minus-3px mb-45px d-block">Most trusted health partner
                         for your life.</h1>
                     <a class="btn btn-medium btn-switch-text btn-dark-gray btn-round-edge me-15px xs-me-5px"
-                       href="demo-medical-appointment.php">
+                       href="demo-medical-appointment.html">
 <span>
 <span class="btn-double-text" data-text="Trusted doctor">Find a doctor</span>
 </span>
                     </a>
                     <a class="btn btn-medium btn-switch-text left-icon btn-transparent-light-gray border-color-transparent-dark-gray btn-round-edge"
-                       href="demo-medical-appointment.php">
+                       href="demo-medical-appointment.html">
 <span>
 <span><i class="feather icon-feather-video"></i></span>
 <span class="btn-double-text" data-text="Video call">Video call</span>
@@ -559,7 +493,7 @@ $conn = new mysqli($host, $username, $password, $dbname);
                        href="tel:12345678910">
 <span>
 <span><i class="feather icon-feather-phone-call"></i></span>
-<span class="btn-double-text" data-text="+1 234 567 8910">06 61 28 73 82</span>
+<span class="btn-double-text" data-text="+1 234 567 8910">+1 234 567 8910</span>
 </span>
                     </a>
                 </div>
@@ -664,7 +598,7 @@ $conn = new mysqli($host, $username, $password, $dbname);
                         </div>
                         <a class="text-dark-gray fs-18 fw-700 mb-5px" href="#">Dr. Shoko mugikura</a>
                         <p class="w-90 mx-auto lh-28">Specialize in <span
-                                class="text-dark-gray text-decoration-line-bottom fw-500">psychiatry</span> at Katim
+                                class="text-dark-gray text-decoration-line-bottom fw-500">psychiatry</span> at Inaamajay
                             hospital.</p>
                         <div class="text-center elements-social social-icon-style-02 border-top border-color-light-medium-gray w-100 pt-15px">
                             <ul class="small-icon dark">
@@ -692,7 +626,7 @@ $conn = new mysqli($host, $username, $password, $dbname);
                         </div>
                         <a class="text-dark-gray fs-18 fw-700 mb-5px" href="#">Dr. Herman miller</a>
                         <p class="w-90 mx-auto lh-28">Specialize in <span
-                                class="text-dark-gray text-decoration-line-bottom fw-500">cancer</span> at Katim
+                                class="text-dark-gray text-decoration-line-bottom fw-500">cancer</span> at Inaamajay
                             hospital.</p>
                         <div class="text-center elements-social social-icon-style-02 border-top border-color-light-medium-gray w-100 pt-15px">
                             <ul class="small-icon dark">
@@ -720,7 +654,7 @@ $conn = new mysqli($host, $username, $password, $dbname);
                         </div>
                         <a class="text-dark-gray fs-18 fw-700 mb-5px" href="#">Dr. Leonel mooney</a>
                         <p class="w-90 mx-auto lh-28">Specialize in <span
-                                class="text-dark-gray text-decoration-line-bottom fw-500">pediatrics</span> at Katim
+                                class="text-dark-gray text-decoration-line-bottom fw-500">pediatrics</span> at Inaamajay
                             hospital.</p>
                         <div class="text-center elements-social social-icon-style-02 border-top border-color-light-medium-gray w-100 pt-15px">
                             <ul class="small-icon dark">
@@ -748,7 +682,7 @@ $conn = new mysqli($host, $username, $password, $dbname);
                         </div>
                         <a class="text-dark-gray fs-18 fw-700 mb-5px" href="#">Dr. Matthew taylor</a>
                         <p class="w-90 mx-auto lh-28">Specialize in <span
-                                class="text-dark-gray text-decoration-line-bottom fw-500">psychiatry</span> at Katim
+                                class="text-dark-gray text-decoration-line-bottom fw-500">psychiatry</span> at Inaamajay
                             hospital.</p>
                         <div class="text-center elements-social social-icon-style-02 border-top border-color-light-medium-gray w-100 pt-15px">
                             <ul class="small-icon dark">
@@ -798,50 +732,33 @@ $conn = new mysqli($host, $username, $password, $dbname);
                         </div>
                         <div class="col">
                             <span class="fw-600 text-dark-gray">For urgent matters<br><a class="fs-22 ls-minus-05px fw-800"
-                                                                                         href="tel:12345678910">+06 61 72 72 99</a></span>
+                                                                                         href="tel:12345678910">+1 234 567 8910</a></span>
                         </div>
                     </div>
                 </div>
                 <div class="col-xl-8 col-lg-7">
                     <div class="contact-form-style-05">
 
-
-
-
-
- 
-
-
-
-
-
-<!-- 
-                        <form ethod="POST"  action="" >
+                        <form action="email-templates/contact-form.php" method="post">
                             <div class="row justify-content-center">
                                 <div class="col-md-6 sm-mb-25px">
-                                    <input class="mb-25px form-control" name="name" placeholder="Patient's full name*"
+                                    <input class="mb-25px form-control required" name="name" placeholder="Patient's full name*"
                                            type="text"/>
-<input class="mb-25px form-control" name="age" placeholder="age"
-                                           type="number"/>
-
-<input class="mb-25px form-control" name="numero" placeholder="numero"
-                                           type="number"/>
-                                    <input class="mb-25px form-control " name="email" placeholder="Patient's email*"
+                                    <input class="mb-25px form-control required" name="email" placeholder="Patient's email*"
                                            type="text"/>
                                     <div class="date-time row gutter-very-small">
                                         <div class="date-icon col-xl-6 lg-mb-25px">
-                                            <input aria-label="date" class="form-control"    
+                                            <input aria-label="date" class="form-control" max="2099-12-31" min="2023-01-01"
                                                    name="date" type="date" value="2023-01-01"/>
                                         </div>
                                         <div class="time-icon col-xl-6">
-                                            <input aria-label="time" class="form-control"  
+                                            <input aria-label="time" class="form-control" max="12:00" min="09:00"
                                                    name="time" type="time" value="09:12"/>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="col-md-6">
                                     <div class="mb-25px select">
-                                        
                                         <select aria-label="select-doctor" class="form-control" name="select">
                                             <option value>Select doctor</option>
                                             <option value="Pediatrician - Dr. Bryan jonhson">Pediatrician - Dr. Bryan
@@ -870,188 +787,16 @@ $conn = new mysqli($host, $username, $password, $dbname);
                                         consent.</p>
                                 </div>
                                 <div class="col-md-6 text-center text-md-end mt-25px sm-mt-20px">
-                                 < //   <input name="redirect" type="hidden" value> -->
-
-                                    <!-- <button name='user_submit' class="btn btn-medium btn-base-color btn-round-edge left-icon btn-box-shadow submit"
-                                            ><i class="bi bi-calendar-check"></i>Book appointment
+                                    <input name="redirect" type="hidden" value>
+                                    <button class="btn btn-medium btn-base-color btn-round-edge left-icon btn-box-shadow submit"
+                                            type="submit"><i class="bi bi-calendar-check"></i>Book appointment
                                     </button>
                                 </div>
                                 <div class="col-12">
                                     <div class="form-results mt-20px d-none text-center"></div>
                                 </div>
                             </div>
-                        </form> --> 
-
-
-
-
-                        <form method="POST" action="" class="row contact-form-style-02">
-    <div class="col-md-6 mb-30px">
-        <input class="form-control border-radius-8px border-color-white box-shadow-double-large" type="number" name="age" placeholder="AGE"   />
-        <input class="input-name border-radius-4px border-color-white box-shadow-double-large form-control" type="text" name="name" placeholder="Patient's full name*"   />
-    </div>
-
-    <div class="col-md-6 mb-30px">
-        <input class="border-radius-4px border-color-white box-shadow-double-large form-control" type="number" name="numero" placeholder="Numero"   />
-        <input class="border-radius-4px border-color-white box-shadow-double-large form-control" type="email" name="email" placeholder="Patient's email*"   />
-    </div>
-
-    <div class="col-md-6 mb-30px">
-        <input class="form-control border-radius-4px border-color-white box-shadow-double-large" type="date" name="date" value="2023-01-01" aria-label="date"   />
-    </div>
-
-    <div class="col-md-6 mb-30px">
-        <div class="select">
-            <select class="form-control border-radius-4px border-color-white box-shadow-double-large" name="select" aria-label="select-doctor"  >
-                <option value="">Select doctor</option>
-                <option value="Pediatrician - Dr. Bryan jonhson">Pediatrician - Dr. Bryan jonhson</option>
-                <option value="Cardiology - Dr. Jemmy watson">Cardiology - Dr. Jemmy watson</option>
-                <option value="Neurology - Dr. Jeremy dupont">Neurology - Dr. Jeremy dupont</option>
-                <option value="Orthopedics - Dr. Evan thomson">Orthopedics - Dr. Evan thomson</option>
-                <option value="Optometrists - Dr. Shoko mugikura">Optometrists - Dr. Shoko mugikura</option>
-            </select>
-        </div>
-    </div>
-
-    <div class="col-md-12 mb-3">
-        <textarea class="border-radius-4px border-color-white box-shadow-double-large form-control" cols="40" rows="4" name="comment" placeholder="Your message"></textarea>
-    </div>
-
-    <div class="col-xl-6 col-md-7">
-        <p class="mb-0 fs-14 lh-26 text-center text-md-start w-90 md-w-100">We are committed to protecting your privacy. We will never collect information about you without your explicit consent.</p>
-    </div>
-    <div class="col-xl-6 col-md-5 text-center text-md-end sm-mt-20px">
-     
-    <div class="header-button">
-    <button name='user_submit' class="btn btn-medium btn-base-color btn-round-edge left-icon btn-box-shadow ">
-    <i class="bi bi-calendar-check"></i>Book appointment
-    </button>
-    </div>
-
-
-
-
-    </div>
-    <div class="col-12">
-        <div class="form-results mt-20px d-none"></div>
-    </div>
-</form>
-
-
- 
-                        <?php 
-if ($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['user_submit'])) {
-    $name = $conn->real_escape_string($_POST['name']);
-    $email = $conn->real_escape_string($_POST['email']);
-    $date = $conn->real_escape_string($_POST['date']);
-    $age = $conn->real_escape_string($_POST['age']);
-    $numero = $conn->real_escape_string($_POST['numero']);
-    $doctor = $conn->real_escape_string($_POST['select']);
-    $comment = $conn->real_escape_string($_POST['comment']);
-    
-    if ($name !== "" && $email !== "" && $date !== "" && $age !== "" && $numero !== "" && $doctor !== "") {
-        $stmt = $conn->prepare("INSERT INTO `tbl_appointment` (`resident_name`, `age`, `staff_in_charge`, `request_date`, `concern`, `appointment_type`, `status`, `appointment_date`, `remarks`, `mobile_no`) 
-        VALUES (?, ?, ?, ?, ?, ?, 'active', ?, ?, ?)");
-        $stmt->bind_param("sisssssss", $name, $age, $doctor, $date, $comment, $comment, $date, $comment, $numero);
-        
-        if ($stmt->execute()) {
-            echo "<script>swal({
-                title: 'Reservation Successful',
-                icon: 'success',
-            });</script>";
-        } else {
-            echo "<script>swal({
-                title: 'Error occurred',
-                icon: 'error',
-            });</script>";
-        }
-    } else {
-        echo "<script>swal({
-            title: 'Please fill all required fields',
-            icon: 'error',
-        });</script>";
-    }
-}
-?>
-
-
-
-
-
-
-                        <?php       
-            
-        // if ($_SERVER['REQUEST_METHOD'] === 'POST' || isset($_POST['user'])) {
-
-        //     echo "hi";
-             
-        //     //$insertion_reussie = true; // Insertion réussie
-        //     // header("location:omg.php");
-            
-        //     // echo '.
-        //     //      <script>
-        //     //       Swal.fire({
-        //     //         icon: 'success',
-        //     //         title: 'DATA OUI  ',
-        //     //         text: 'Coordonnnees  valides!',
-        //     //         confiramtaionButtonText: 'Ok',
-        //     //         timer : 7500
-        //     //         })
-        //     //        </script> .';
-
-
-        //     $name = $conn->real_escape_string($_POST['name']);
-        //     $email = $conn->real_escape_string($_POST['email']);
-        //     $date = $conn->real_escape_string($_POST['date']);
-        //     $age= $conn->real_escape_string($_POST['age']);
-        //     $numero = $conn->real_escape_string($_POST['numero']);
-        //     $doctor = $conn->real_escape_string($_POST['select']);
-        //     $comment = $conn->real_escape_string($_POST['comment']);
-        
-        //     // Vérification et validation des champs obligatoires
-        //     if ($name !== "") {
-        
-        //     $sql = "INSERT INTO `tbl_appointment` (`resident_name`, `age`, `staff_in_charge`, `request_date`, `concern`, `appointment_type`, `status`, `appointment_date`, `remarks`, `mobile_no`) VALUES
-        //      ('$name','$age','$doctor','$date','$comment','$comment', 'active','$date', '$comment','$numero')";
-
-                
-                
-
-        //         if (mysqli_query($conn,$sql)) { 
-        //          echo "
-        //          <script>
-        //           Swal.fire({
-        //             icon: 'success',
-        //             title: 'DATA OUI  ',
-        //             text: 'Coordonnnees  valides!',
-        //             confiramtaionButtonText: 'Ok',
-        //             timer : 7500
-        //             })
-        //            </script>";
-        //         }
-        
-        //          else {
-        //           echo "
-        //           <script>
-        //           Swal.fire({
-        //               icon: 'success',
-        //               title: 'DATA NO',
-        //               text: 'Coordonnnees  valides!',
-        //               confiramtaionButtonText: 'Ok',
-        //               timer : 9050
-        //              })
-        //            </script>";
-        //         }
-        //     }
-            
-        //     }
-             
-
-            ?>
-
-
- 
-
+                        </form>
 
                     </div>
                 </div>
@@ -1071,7 +816,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['user_submit'])) {
                 <div class="row align-items-center">
 
                     <div class="col-xl-3 col-sm-6 order-1 text-center text-sm-start xs-mb-20px">
-                        <a class="footer-logo d-inline-block" href="index.php"><img
+                        <a class="footer-logo d-inline-block" href="index.html"><img
                                 alt
                                 data-at2x="images/demo-medical-logo-white@2x.png" src="images/demo-medical-logo-white.png"></a>
                     </div>
@@ -1079,7 +824,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['user_submit'])) {
 
                     <div class="col-xl-6 order-3 order-xl-2 lg-mt-10px">
                         <ul class="footer-navbar text-center lh-normal">
-                            <li class="nav-item"><a class="nav-link" href="index.php">Home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                             <li class="nav-item"><a class="nav-link" href="demo-medical-about.html">About</a></li>
                             <li class="nav-item"><a class="nav-link" href="demo-medical-treatments.html">Treatments</a>
                             </li>
@@ -1112,8 +857,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['user_submit'])) {
             <div class="row row-cols-1 row-cols-md-2 align-items-center pt-30px pb-30px">
 
                 <div class="col last-paragraph-no-margin fs-15 text-center text-md-start sm-mb-10px">
-                    <p>&copy; 2024 Katim is Proudly Powered by <a class="text-decoration-line-bottom text-dark-gray fw-600" href="https://www.Inaamajay.com/"
-                                                                   target="_blank">Katim Health Care</a>
+                    <p>&copy; 2024 Inaamajay is Proudly Powered by <a class="text-decoration-line-bottom text-dark-gray fw-600" href="https://www.Inaamajay.com/"
+                                                                   target="_blank">Inaamajay</a>
                     </p>
                 </div>
 
@@ -1134,7 +879,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['user_submit'])) {
         <span class="fs-15 fw-500 d-flex align-items-center"><i
                 class="bi bi-envelope icon-small me-10px align-middle"></i>Arrange your appointment — <a
                 class="text-decoration-line-bottom fw-700 lh-22"
-                href="demo-medical-appointment.php">Book appointment</a></span>
+                href="demo-medical-appointment.html">Book appointment</a></span>
     </div>
 
 </div>
@@ -1147,9 +892,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST' || isset($_POST['user_submit'])) {
 
 
 <script src="js/jquery.js" type="text/javascript"></script>
-<script src="js/vendors.min.js" type="text/javascript"></script>  
+<script src="js/vendors.min.js" type="text/javascript"></script>
 <script src="js/main.js" type="text/javascript"></script>
-<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-	 
 </body>
 </html>
+ 
